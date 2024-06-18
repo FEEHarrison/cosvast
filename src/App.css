@@ -1,3 +1,10 @@
+html {
+  font-size: 625%; /* 1rem = 10px, 10px/16px = 62.5% */
+}
+body {
+  font-size: 0.16rem; /* 16px */
+}
+
 .App {
   text-align: center;
 }
