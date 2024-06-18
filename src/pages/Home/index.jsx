@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer/index.jsx";
 import Culture from "@/pages/Home/component/Culture";
+import Conduct from "@/pages/Home/component/Conduct";
 import Slider from "@/components/Slider/index.jsx";
 import "./index.less";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Slider />
       <Culture />
+      <Conduct />
       <Footer />
     </div>
   );

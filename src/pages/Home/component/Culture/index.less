@@ -1,24 +1,28 @@
-.cultureContainer {
-  position: relative;
-  width: 100%;
-  padding: 155px 9vw;
+#culture {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  position: relative;
+  padding: 155px 9vw;
+  justify-content: space-between;
   .cultureLeft {
-    // margin-top: 9vw;
     flex: 0.9 1 0%;
+    text-align: left;
     .title {
-      //   position: absolute;
       top: 0.2rem;
       font-size: 0.48rem;
       line-height: 0.56rem;
       font-weight: 700;
     }
+
     .desc {
       font-size: 0.22rem;
+      margin-top: 3vw;
+      color: rgb(51, 51, 51);
     }
   }
   .cultureRight {
     width: 47.5vw;
+    max-width: 9.12rem;
+    overflow: hidden;
   }
 }

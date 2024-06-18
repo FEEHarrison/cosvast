@@ -1,0 +1,89 @@
+#CultureSlider {
+  border-radius: 18px;
+  .slick-arrow {
+    box-sizing: content-box;
+    top: calc(0.34rem + 27vw);
+    position: absolute;
+    width: 0.18rem;
+    height: 0.32rem;
+    font-size: 0px;
+    color: transparent;
+    background-size: 100% 100%;
+    z-index: 5;
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    background-color: rgb(255, 255, 255);
+  }
+  .slick-prev {
+    left: 0;
+    border-width: 0.1rem 0.1rem 0.1rem 0.63rem;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABqCAMAAAA7gKe8AAAANlBMVEUAAACrzf+ny/+rzf+rzf+iz/+qyv+rzv+rzf+rzv+rzf+szv+qzP+rzv+rzf+ry/+ny/+rzf8aBjGUAAAAEXRSTlMA3yCA7xAwz6CQcF9Qv69AQAXdXlMAAAEwSURBVFjD7ZlRDsIgEESBAkVqW7n/ZTUxpln/dh/RRpn/2aQzfUto3feUaikL8N9ie8gHq7+2p7zRP7WXbP7S0IA0NzQg+IYG5MNvCnGJwh8s8R+a1f6L8JekjX8T/kkd/yz8ldUXrxZ6Dvmsp6dnfas6/iL8Fz09sD4v/AujJ+Z/o2el8TN68qCH0BO60hP19ERITxv09KNn1/qvcHlVGf+gh9DjP05PkPUlp5UX9BhuDu/xE36rM6gAesCAno+w0xDdKinSK4M9QF5luQsBTAxnvlDkSpMT2FLdEphwlMEPFn6t4ocrPN5NdFO2JsxWPR1brX6DLVdkGYMtwBZedFtntoqljB88t2xsnW7RrYY662CrF1vTGdiKndnq8HEesuXoFQH/IuE/aaza/bPGO08iWl0SVOokAAAAAElFTkSuQmCC");
+  }
+  .slick-next {
+    right: 0;
+    border-width: 0.1rem 0.63rem 0.1rem 0.1rem;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABqCAMAAAA7gKe8AAAANlBMVEUAAACnzP+rzf+rzf+jz/+qyv+rz/+rzv+ry/+rzf+rzP+rzv+szv+rzv+rzf+qzP+qy/+rzf9+oiD6AAAAEXRSTlMAIN/vEDB/z4CgcJBfv69QQIHJ95kAAAEhSURBVFjD7ZnLkoUgDAWJARXFR/7/Z2c2UzVMzSrNlfswe7tKjh2ChBYVl5yLBHfJYN81JPa8mR5OQLGfGn2AbBUBAWyPDsBiv2oQR4gDJUhF0JMSbHEQJjNjYawVYXUQ5oowiSdNGkaq40w4ztIjjLgDQhUGcGvGYRz6Dm7F7XbrIW5ZH7fy7dZ/bh04zvEJ3Mq3Wz2HiNy40W3REcbzuZUwQegQsQUaRqAEcEhBAGWAsXoF2KBoi9yh1SpXf8qnks7GdR5ZQ4l/WhpsqvPVI1NSFl/Rlss/CdzeIxsw5qt31QQPMEdTe6bPtkcd9rDlL9bUnnjbgwa5vvbsn2bP+V72hBezR6A9Qn+NF3quznXzQoA1eGqp4/PfL2jpc030BUBPWtoMJ3YEAAAAAElFTkSuQmCC");
+  }
+  .slick-slider {
+    height: 100%;
+    .slick-list {
+      height: 100%;
+      border-radius: 18px;
+      .slick-slide {
+        height: 100%;
+        & > div {
+          height: 100%;
+        }
+        .slick-track {
+          height: 100%;
+        }
+      }
+    }
+    .sliderItem {
+      height: 100%;
+      img {
+        width: 100%;
+        min-height: 27vh;
+        user-select: none;
+        object-fit: cover;
+      }
+      .itemDesc {
+        background: rgb(255, 255, 255);
+        padding: 0px 8vw;
+
+        .title {
+          margin-top: 0.1rem;
+          margin-bottom: 0.18rem;
+          font-size: 0.3rem;
+          line-height: 0.54rem;
+          text-align: left;
+          transform: scale(1) !important;
+          font-weight: 700;
+        }
+        .desc-container {
+          list-style: none;
+          .desc {
+            font-size: 0.2rem;
+            transform-origin: center center;
+            text-align: left;
+            position: relative;
+            margin-bottom: 0.05rem;
+            &::after {
+              content: "";
+              position: absolute;
+              left: -0.15rem;
+              top: 0.15rem;
+              display: block;
+              width: 4px;
+              height: 4px;
+              border-radius: 100%;
+              background: rgb(0, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

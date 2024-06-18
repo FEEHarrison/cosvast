@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="footerBox">
         <div className="locale-select">12345</div>
         <div className="copyright-wrapper">
-          <div className="copyright">© 2024-2028 星图无疆</div>
+          <div className="copyright">© 2020-2024 星图无疆</div>
           <div className="copyright-icp">
             <img
               src="https://lf1-cdn-tos.bytescm.com/obj/static/ies/bytedance_official/_next/static/images/icp-9ca98112ae9d12370794027a9b22b221.png"
